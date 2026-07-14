@@ -1,0 +1,37 @@
+import enum
+
+class WasteType(str, enum.Enum):
+    PLASTIC = "PLASTIC"
+    PAPER = "PAPER"
+    ORGANIC = "ORGANIC"
+    METAL = "METAL"
+    GLASS = "GLASS"
+    ELECTRONIC = "ELECTRONIC"
+    HAZARDOUS = "HAZARDOUS"
+    MIXED = "MIXED"
+    OTHER = "OTHER"
+
+class ComplaintCategory(str, enum.Enum):
+    OVERFLOWING_BIN = "OVERFLOWING_BIN"
+    LITTERING = "LITTERING"
+    ILLEGAL_DUMPING = "ILLEGAL_DUMPING"
+    HAZARDOUS_WASTE = "HAZARDOUS_WASTE"
+    BROKEN_BIN = "BROKEN_BIN"
+    MISSED_COLLECTION = "MISSED_COLLECTION"
+    BLOCKED_DRAIN = "BLOCKED_DRAIN"
+    FOOD_WASTE = "FOOD_WASTE"
+    E_WASTE = "E_WASTE"
+    OTHER = "OTHER"
+
+class Priority(str, enum.Enum):
+    LOW = "LOW"
+    MEDIUM = "MEDIUM"
+    HIGH = "HIGH"
+    CRITICAL = "CRITICAL"
+
+class ComplaintStatus(str, enum.Enum):
+    PENDING = "PENDING"
+    ASSIGNED = "ASSIGNED"
+    IN_PROGRESS = "IN_PROGRESS"
+    COMPLETED = "COMPLETED"
+    CANCELLED = "CANCELLED"
