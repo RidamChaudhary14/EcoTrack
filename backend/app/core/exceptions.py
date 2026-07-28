@@ -17,3 +17,11 @@ class NotFoundError(DatabaseError):
 class IntegrityError(DatabaseError):
     """Raised when a database integrity constraint is violated."""
     pass
+
+class AuthorizationError(Exception):
+    """Raised when a user is not authorized to perform an action."""
+    pass
+    
+class ConflictError(Exception):
+    """Raised when a business rule conflict occurs (e.g. duplicate email)."""
+    pass

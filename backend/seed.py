@@ -31,7 +31,7 @@ def seed_db():
     )
     
     staff = [
-        User(full_name=f"Staff {i}", email=f"staff{i}@ecotrack.edu", hashed_password=get_password_hash("password123"), role=UserRole.STAFF)
+        User(full_name=f"Staff {i}", email=f"staff{i}@ecotrack.edu", hashed_password=get_password_hash("123456"), role=UserRole.STAFF)
         for i in range(1, 4)
     ]
     
